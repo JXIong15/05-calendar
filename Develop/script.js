@@ -15,15 +15,15 @@ $(document).ready(function () {
     })
 
     function createTimeBlocks() {
-        let timeBlock = $("#time-block");
+        let timeBlock = $("#row");
         // array of business hours
         let hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
         // create time blocks
         hours.forEach(function(i){ 
-            let timeEl = $("<label>").addClass("textarea").val(i).text(i).attr("type", "label");
-            let input = $("<input>").attr("type", "text");
+            let timeEl = $("<p>").val(i).text(i).attr("type", "p").attr("border", "solid");
+            let input = $("<input>").attr("type", "text").attr("size", "100%");
             var button = $("<button>").text("💾").attr("type", "button");
-            timeBlock.append(timeEl).append(input).append(button).append("<br>");
+            timeBlock.append(timeEl).append(input).append(button);
         }) 
         
         // if block is in the past, code block is gray 
