@@ -14,7 +14,7 @@ $(document).ready(function () {
 
             var inputEl = $("#task"); // Problem: 8 textboxes called "task", so there will be a saving error
             // when save button is clicked, the text is saved to local storage
-            button.click(function() {
+            button.click(function(i) {
                 console.log("Hello");
                 console.log(inputEl.val());
                 let myInput = inputEl.val();
@@ -26,21 +26,22 @@ $(document).ready(function () {
 
             rowEl.append(timeEl).append(input).append(button);
             timeBlock.append(rowEl);
-            // timeBlockColor(timeEl, rowEl);
+            timeBlockColor(timeEl, input);
         })
     }
 
-    // function timeBlockColor(timeEl, rowEl) {
-    //     if (timeEl > currentTime) {
-    //         rowEl.addClass("past");
-    //     }
-    //     else if (timeEl < currentTime) {
-    //         rowEl.addClass("present");
-    //     }
-    //     else {
-    //         rowEl.addClass("future");
-    //     }
-    // }
+    function timeBlockColor(timeEl, input) {
+        let currentTime = moment().format('LT');
+        if (timeEl > currentTime) {
+            input.addClass("past");
+        }
+        else if (timeEl < currentTime) {
+            input.addClass("present");
+        }
+        else {
+            input.addClass("future");
+        }
+    }
 
     
     createTimeBlocks();
