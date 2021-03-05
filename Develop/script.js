@@ -8,9 +8,9 @@ $(document).ready(function () {
         // create time blocks
         hours.forEach(function (i) {
             var rowEl = $("<div>").addClass("row");
-            let timeEl = $("<label>").addClass("hour").val(i).text(i).attr("type", "label");
-            let input = $("<input id='task'>").attr("type", "text");
-            let button = $("<button>").addClass("saveBtn").text("💾").attr("type", "button");
+            let timeEl = $("<label>").addClass("hour col-12 col-lg-1").val(i).text(i).attr("type", "label");
+            let input = $("<input id='task'>").addClass("col-12 col-lg-10").attr("type", "text");
+            let button = $("<button>").addClass("saveBtn col-12 col-lg-1").text("💾").attr("type", "button");
 
             var inputEl = $("#task"); // Problem: 8 textboxes called "task", so there will be a saving error
             // when save button is clicked, the text is saved to local storage
