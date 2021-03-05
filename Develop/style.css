@@ -25,10 +25,9 @@ textarea{
   white-space: pre-wrap;
 }
 
-section{
-  justify-content: center;
+.time-block{
+  text-align: center;
   border-radius: 15px;
-  border: solid;
 }
 
 .row {
@@ -41,6 +40,7 @@ section{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding-top: 10px;
 }
 
 .past {
