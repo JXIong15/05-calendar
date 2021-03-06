@@ -12,16 +12,13 @@ $(document).ready(function () {
             let input = $("<input id='task'>").addClass("col-12 col-lg-10").attr("type", "text");
             let button = $("<button>").addClass("saveBtn col-12 col-lg-1").text("💾").attr("type", "button");
 
-            var inputEl = $("#task"); // Problem: 8 textboxes called "task", so there will be a saving error
-            // when save button is clicked, the text is saved to local storage
             button.click(function(i) {
-                console.log("Hello");
-                console.log(inputEl.val());
-                let myInput = inputEl.val();
+                console.log(input.val());
+                let myInput = input.val();
 
                 let eventEl = localStorage.getItem("event") || "";
                 localStorage.setItem("event", myInput);
-                inputEl.text(myInput);
+                input.text(myInput);
             })
 
             rowEl.append(timeEl).append(input).append(button);

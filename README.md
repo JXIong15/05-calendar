@@ -1,15 +1,11 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
-
-```
+## To Do
+* localStorage!!! Ask tutor for help
 
 ## Acceptance Criteria
 
 ```md
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 WHEN I click into a timeblock
 THEN I can enter an event
 WHEN I click the save button for that timeblock
