@@ -1,94 +1,32 @@
 # 05 Third-Party APIs: Work Day Scheduler
-
-## To Do
-* localStorage!!! Ask tutor for help
-
-## Acceptance Criteria
-
-```md
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
-
-
-## Grading Requirements
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
-
-
-* Functioning Website link: https://jxiong15.github.io/04-codequiz/
+* Functioning Website link: https://jxiong15.github.io/05-calendar/
     * Displays an interactive quiz about coding.
-* GitHub Repository Link: https://github.com/JXIong15/04-codequiz
+* GitHub Repository Link: https://github.com/JXIong15/05-calendar
 
 
 ## Functionalitty
-
-
-
+* When the user loads the page, they will see the current date along with the working day time blocks.
+* When the user clicks on a textfield, they can type a task there.
+* When the user clicks on the save button, the textfield is saved to the local storage.
+* When the user reloads the page, the saved value is still in that text field.
+* Each time block is color coded based on whether the time has passed or not for the day.
+  * Times in the past are in gray.
+  * The current time block is in red.
+  * Times in the future are in green.
 
 ## Tasks Completed
-
+* Used momentjs to get the current date to display on the subheading.
+* Created each row element (label, input, and button). Appended each element to the row. Appended each row to the overall timeblock on the HTML.
+* Made the button functionality to save the input text value in association with the time element.
+* When the page reloads, the localstorage is called to get all the saved values. Thus, refreshing the page does NOT affect the input values.
+* Set the timeblocks to colors depending on whether the time has passed or not for the day.
 
 
 ## Website Images
-* Start Page: 
-![Start Page](./Assets/start.png)
-
+* Blank Agenda: 
+![Blank Agenda](./Assets/no-input.png)
+* Saved Values: 
+![Saved Values](./Assets/saved-input.png)
 
 - - -
 © 2021 Jou Xiong, Northwestern Coding Bootcamp

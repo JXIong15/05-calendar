@@ -2,17 +2,17 @@ $(document).ready(function () {
     $('#currentDay').text(moment().format('dddd, MMMM Do, YYYY'));
     var timeBlock = $("#time-block");
     // array of business hours
-    var hours = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"];
+    var hoursArr = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"];
 
     function createTimeBlocks() {
         // create time blocks
-        hours.forEach(function (i) {
-
+        hoursArr.forEach(function (i) {
             var task = localStorage.getItem(i);
-
             var rowEl = $("<div>").addClass("row");
+
+            // creates each element in the row
             let timeEl = $("<label>").addClass("hour col-12 col-lg-1").val(i).text(i).attr("type", "label");
-            let input = $("<input id='task'>").addClass("col-12 col-lg-10").attr("type", "text").val(task);
+            let input = $("<input>").addClass("col-12 col-lg-10").attr("type", "text").val(task);
             let button = $("<button>").addClass("saveBtn col-12 col-lg-1").text("💾").attr("type", "button");
 
             // when the button is clicked, then the input text is saved to the local storage
