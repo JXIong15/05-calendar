@@ -10,7 +10,7 @@
 * [Tasks Completed](#tasks-completed)
 * [Technologies Used](#technologies-used)
 * [Website Images](#website-images)
-* [Contact Me] (#contact-me)
+* [Contact Me](#contact-me)
 
 
 ## Introduction
