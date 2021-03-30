@@ -36,10 +36,10 @@ This application allows the user to input any tasks for the workday. The backgro
 
 
 ## Technologies Used
-* CSS
 * HTML
 * JS, JQuery
    * Local Storage
+* CSS was given
 
 
 ## Website Images
