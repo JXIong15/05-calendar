@@ -14,7 +14,7 @@
 
 
 ## Introduction
-This application allows the user to input any tasks for the workday. The background is highlighted in colors to indicate whether that time has passed or not. The adenga is saved in local storage so that the user cna come back to it at any time and see what needs to be completed.
+This application allows the user to input any tasks for the workday. The background is highlighted in colors to indicate whether that time has passed or not. The adenga is saved in local storage so that the user can come back to it at any time and see what needs to be completed.
 
 
 ## Functionality
